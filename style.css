@@ -1,0 +1,152 @@
+
+/*  LINK DEL DESAFIO: 
+    https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc 
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color-green: #bfdf32;
+    --bg-color-blue: #2bb3b1;
+    --bg-color-light-blue: #4abebd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main .contain-community {
+    /* background-color: aqua; */
+    padding: 20px;
+    margin: 5px;
+}
+
+.contain-community {    
+    padding: 0.5em;
+}
+
+.title {
+    color: var(--bg-color-blue);
+    margin-bottom: 15px;    
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--bg-color-green);
+    margin-bottom: 10px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+main .contain-subscription {
+    padding: 1em;
+    margin: 5px;
+}
+
+main div .subscription {
+    background-color: var(--bg-color-blue);
+    color: white;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+div .subscription  p {
+    margin-bottom: 3px;
+}
+
+.subscription > p:first-child {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cost {
+    font-weight: bold;
+}
+
+span {
+    font-size: small;
+    font-weight: lighter;
+}
+
+input {
+    width: 75%;
+    margin: 15px auto 0 auto;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--bg-color-green);
+    background-color: var(--bg-color-green);
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+input:hover {
+    box-shadow: 0 4px 4px #000;
+}
+
+main div .reasons {
+    background-color: var(--bg-color-light-blue);
+    color: white;
+}
+
+.reasons {
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+.reasons > p {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+li {
+    font-size: small;
+}
+
+@media (min-width: 500px) { 
+   main .contain-subscription {
+       display: flex;
+       flex-direction: row;
+       padding: 0;
+       margin: 0;
+       height: 281px;
+   }
+   .subscription {
+       display: flex;
+       justify-content: flex-start;
+       width: 100%;
+       padding-left: 30px;
+   }
+   .reasons {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-content: flex-start;
+       width: 100%;
+   }
+   
+   .reasons > p {
+       padding-left: 30px;
+    }
+
+    ul {
+        padding-left: 30px;
+    }
+
+}
