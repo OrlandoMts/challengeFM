@@ -86,9 +86,9 @@ input {
     width: 75%;
     margin: 15px auto 0 auto;
     height: 30px;
-    border-radius: 8px;
+    /* border-radius: 8px;
     border: 1px solid var(--bg-color-green);
-    background-color: var(--bg-color-green);
+    background-color: var(--bg-color-green); */
     color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
